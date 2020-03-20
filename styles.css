@@ -1,0 +1,144 @@
+.text{
+ width: 300px; /* Ширина поля с кнопкой */
+ border: 1px solid #000; /* Параметры рамки */
+ min-height: 20px; /* Минимальная высота */
+}
+
+.input-border {
+ border: solid 1px black;
+ width: 380px;
+}
+
+input[type="text"] {
+ position: relative;
+ top: 10px;
+ border: 40px;
+ outline: none; /* Убираем свечение в Chrome и Safari */
+ -webkit-appearance: none; /* Убираем рамку в Chrome и Safari */
+ width: 140px; /* Ширина поля */
+ vertical-align: middle; /* Выравнивание по середине */
+ padding: 5px;
+}
+
+button[type="submit"] {
+ position: relative;
+ left: 180px;
+ top:10px;
+ background: green;
+ width: 40px; /* Ширина кнопки */
+ height: 30px; /* Высота кнопки */
+ border: none; /* Убираем рамку */
+
+}
+
+
+input[type= "checkbox"] {
+ position: relative;
+ align-items: center;
+ top: 8px;
+ left: 8px;
+ height: 15px;
+ width: 15px;
+ background-color: #eee;
+}
+
+
+
+
+table {width: 370px;}
+tr {width: 10%;}
+td {width: 90%;}
+tr, td {padding: 10px 15px;}
+
+
+
+[type="radio"]:checked,
+[type="radio"]:not(:checked) {
+ position: absolute;
+ left: -9999px;
+}
+[type="radio"]:checked + label,
+[type="radio"]:not(:checked) + label
+{
+ position: relative;
+ padding-left: 28px;
+ cursor: pointer;
+ line-height: 20px;
+ display: inline-block;
+ color: #666;
+}
+[type="radio"]:checked + label:before,
+[type="radio"]:not(:checked) + label:before {
+ content: '';
+ position: absolute;
+ left: 140px;
+ top: -28px;
+ width: 16px;
+ height: 16px;
+ border: 1px solid #ddd;
+ border-radius: 50%;
+ background: #fff;
+}
+[type="radio"]:checked + label:after,
+[type="radio"]:not(:checked) + label:after {
+ content: '';
+ width: 10px;
+ height: 10px;
+ background: black;
+ position: absolute;
+ top: -24px;
+ left: 144px;
+ border-radius: 100%;
+ -webkit-transition: all 0.2s ease;
+ transition: all 0.2s ease;
+}
+
+[type="radio"]:not(:checked) + label:after {
+ opacity: 0;
+ -webkit-transform: scale(0);
+ transform: scale(0);
+}
+
+[type="radio"]:checked + label:after {
+ opacity: 1;
+ -webkit-transform: scale(1);
+ transform: scale(1);
+}
+
+[id="color1"]:checked + label:after,
+[id="color1"]:not(:checked) + label:before{
+
+ background: #C71585;
+}
+
+[id="color2"]:checked + label:after,
+[id="color2"]:not(:checked) + label:before{
+
+ background: #00FF7F;
+}
+
+[id="color3"]:checked + label:after,
+[id="color3"]:not(:checked) + label:before{
+
+ background: #DC143C;
+}
+
+[id="color4"]:checked + label:after,
+[id="color4"]:not(:checked) + label:before{
+
+ background: #4682B4;
+}
+
+[id="color5"]:checked + label:after,
+[id="color5"]:not(:checked) + label:before{
+
+ background: #FFD700;
+}
+
+[id="color6"]:checked + label:after,
+[id="color6"]:not(:checked) + label:before {
+
+ background: #EE82EE;
+}
+
+
